@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }}  {% endblock %}
+
+{% block h1 %}Agence de Location de Véhicules{% endblock %}
+
+{% block stylesheets %}
+<style>
+p{
+    color:red;
+}
+</style>
+{% endblock %}
+
+{% block body %}
+
+{# 
+sur twig, il existe une variable d'environnement qui s'appelle "app"
+#}
+<pre>
+{{ dump(app.user)}}
+</pre>
+{% set test = "kiwi"%}
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus animi officiis, pariatur possimus, sunt nemo mollitia corporis rerum eum aut ipsum consectetur sed numquam libero laborum explicabo ducimus ad veritatis.
+Aliquid fuga atque dicta ullam a adipisci soluta voluptates sunt! Repellendus obcaecati, facilis dolore quas dolorem deleniti tempora tempore. Praesentium voluptate facere obcaecati, in cumque tempore nihil ullam neque ipsa?
+Mollitia sapiente deleniti aspernatur id. Voluptates vel, sit consequatur esse asperiores quia voluptas molestias recusandae, adipisci atque in, delectus minus beatae sed repellat omnis! Animi culpa accusantium temporibus! Eaque, dolorem.
+Hic molestiae non quos temporibus porro ratione mollitia corporis est architecto nobis amet, tempore quia ducimus sequi voluptates sunt autem cupiditate eveniet cum, quod repellendus ipsum. Quae error laboriosam neque!
+Hic asperiores rerum quidem beatae cum repudiandae, earum inventore dignissimos a est expedita tempore reprehenderit porro deleniti doloremque, optio veniam quo! Molestiae, possimus! Quaerat ratione minus qui. Tempore, quas neque!
+Illo cupiditate eveniet amet quo odio adipisci officia ab ullam, eligendi accusantium impedit alias laudantium earum fuga distinctio perferendis recusandae? Deleniti sequi exercitationem recusandae saepe nemo nostrum vitae odit dolores.
+Quo vel neque autem harum, nihil non vero quae ad numquam earum nemo dolor facilis ipsam eum saepe minus asperiores repellat quaerat pariatur libero eius debitis? Veritatis laborum voluptatibus blanditiis.
+Doloremque obcaecati debitis eum veniam sed harum iure earum, eaque asperiores deleniti similique accusamus officiis velit error quod corporis suscipit iusto possimus esse. Quod facilis ipsa odit. Reiciendis, magnam natus.
+Veritatis nostrum nihil sit sequi excepturi corporis ipsum, itaque ut quam, iusto atque autem labore aliquam id quo, minima laboriosam eius. Omnis impedit minima iusto natus officiis consequuntur mollitia saepe.
+Quibusdam sapiente iste qui, quia maiores tempore non ipsa possimus. Ipsam unde odit ducimus modi est quo asperiores nam, perferendis provident corporis quaerat! Eum nisi possimus eaque, explicabo ipsa laudantium.
+</p>
+{% endblock %}

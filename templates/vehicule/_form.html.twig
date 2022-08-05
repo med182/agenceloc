@@ -1,0 +1,38 @@
+{{ form_start(form) }}
+
+
+<div class="row">
+    
+    <div class="col-md-6">
+        {{ form_label(form.titre) }}
+        {{ form_widget(form.titre) }}
+        {{ form_help(form.titre) }}
+    </div>
+
+    <div class="col-md-6">
+        {{ form_row(form.prix) }}
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col-md-6">
+        {{ form_row(form.marque)}}
+    </div>
+
+    <div class="col-md-6">
+        {{ form_row(form.modele)}}
+    </div>
+
+
+{{ form_row(form.description)}}
+
+{{ form_row(form.imageFile)}}
+
+    {{ form_widget(form) }}
+    <button class="btn btn-primary">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
+</div>
+
+
+

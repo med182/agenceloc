@@ -1,0 +1,9 @@
+{% for notification in app.flashes("success") %}
+    {{notification}}
+{% endfor %}
+{% for notification in app.flashes("warning") %}
+    {{notification}}
+{% endfor %}
+{% for notification in app.flashes("errors") %}
+    {{notification}}
+{% endfor %}
